@@ -1,0 +1,43 @@
+school_management/
+├── main.py
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── database/
+│   ├── db.py
+│   ├── schema.sql
+│   └── models/
+│       ├── __init__.py
+│       ├── student_model.py
+│       ├── teacher_model.py
+│       ├── staff_model.py
+│       └── course_model.py
+├── logic/
+│   ├── __init__.py
+│   ├── auth.py
+│   ├── register.py
+│   └── analytics.py
+├── ui/
+│   ├── __init__.py
+│   ├── login.py
+│   ├── logout.py
+│   ├── register/
+│   │   ├── student_register.py
+│   │   ├── teacher_register.py
+│   │   └── staff_register.py
+│   ├── dashboards/
+│   │   ├── admin_dashboard.py
+│   │   ├── student_dashboard.py
+│   │   ├── teacher_dashboard.py
+│   │   └── staff_dashboard.py
+│   ├── widgets/
+│   │   ├── student_table.py
+│   │   ├── teacher_table.py
+│   │   └── book_table.py
+│   └── styles/
+│       └── main.qss
+├── resources/
+│   ├── images/
+│   └── icons/
+└── tests/
+    └── test_db.py
