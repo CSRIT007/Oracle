@@ -398,6 +398,7 @@ CREATE TABLE IF NOT EXISTS notifications (
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
+
 -- Indexes for faster search
 CREATE INDEX IF NOT EXISTS idx_students_name ON students(name);
 CREATE INDEX IF NOT EXISTS idx_teachers_name ON teachers(name);
@@ -405,4 +406,14 @@ CREATE INDEX IF NOT EXISTS idx_staffs_name ON staffs(name);
 CREATE INDEX IF NOT EXISTS idx_books_name ON books(book_name);
 CREATE INDEX IF NOT EXISTS idx_courses_name ON courses(course_name);
 CREATE INDEX IF NOT EXISTS idx_students_batch ON students(batch_id);
+
+INSERT INTO users (username, password_hash, role) VALUES ('adm', '123', 'admin');
+INSERT INTO users (username, password_hash, role) VALUES ('stu', '123', 'student');
+INSERT INTO users (username, password_hash, role) VALUES ('tea', '123', 'teacher');
+INSERT INTO users (username, password_hash, role) VALUES ('acc', '123', 'account');
+INSERT INTO users (username, password_hash, role) VALUES ('pa', '123', 'parent');
+INSERT INTO users (username, password_hash, role) VALUES ('mstu', '123', 'manage_student_parent');
+INSERT INTO users (username, password_hash, role) VALUES ('mtea', '123', 'manage_teacher');
+INSERT INTO users (username, password_hash, role) VALUES ('eli', '123', 'elibrary');
+INSERT INTO users (username, password_hash, role) VALUES ('cou', '123', 'course');
 
